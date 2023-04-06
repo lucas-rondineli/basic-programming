@@ -1,0 +1,12 @@
+teams = (6, 7, 1, 20, 2, 11, 17, 3, 8, 4, 9, 13, 14, 16, 5, 18, 10, 15, 12, 19)
+
+print('-=' * 15)
+print(f'Lista de times do Brasileirão: {teams}')
+print('-=' * 15)
+print(f'Os 5 primeiros são {teams[:5]}')
+print('-=' * 15)
+print(f'Os 4 últimos são {teams[-4:]}')
+print('-=' * 15)
+print(f'Times em ordem alfabética: {sorted(teams)}')
+print('-=' * 15)
+print(f'O time 7 está na {teams.index(7) + 1}° posição')

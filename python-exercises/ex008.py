@@ -1,0 +1,8 @@
+distance = int(input('Uma distância em metros: '))
+print(f'A medida de {distance}m corresponde a:')
+print(f'{distance * 10 ** -3}km')
+print(f'{distance * 10 ** -2}hm')
+print(f'{distance * 10 ** -1}dam')
+print(f'{distance * 10 ** +1}dm')
+print(f'{distance * 10 ** +2}cm')
+print(f'{distance * 10 ** +3}mm')
