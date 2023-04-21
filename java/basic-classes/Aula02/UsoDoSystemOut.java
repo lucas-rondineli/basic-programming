@@ -1,6 +1,8 @@
+package Aula02;
+
 import java.util.Locale;
 
-public class Aula02_ex004 {
+public class UsoDoSystemOut {
     public static void main(String[] Args) {
         String product1 = "Computer";
         String product2 = "Office desk";

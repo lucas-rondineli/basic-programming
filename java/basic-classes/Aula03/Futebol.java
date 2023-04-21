@@ -1,6 +1,8 @@
+package Aula03;
+
 import java.util.Scanner;
 
-public class Aula03_ex003 {
+public class Futebol {
     public static void main(String[] Args) {
         Scanner sc = new Scanner(System.in);
         int n1, n2;

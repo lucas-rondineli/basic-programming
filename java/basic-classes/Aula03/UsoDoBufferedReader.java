@@ -1,8 +1,10 @@
+package Aula03;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-public class Aula03_ex002 {
+public class UsoDoBufferedReader {
     public static void main(String[] Args) {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 

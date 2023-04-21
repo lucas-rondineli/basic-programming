@@ -1,7 +1,9 @@
+package Aula05;
+
 import javax.swing.JOptionPane;
 import java.util.Arrays;
 
-public class Aula05_ex006 {
+public class OrdenacaoDeNotas {
     public static void main(String[] Args) {
         float[] notas = new float[5];
         float total = 0;

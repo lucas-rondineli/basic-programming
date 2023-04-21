@@ -1,6 +1,8 @@
+package Aula05;
+
 import java.util.Scanner;
 
-public class Aula05_ex002 {
+public class ManipulacaoDeArrayPt2 {
     public static void main(String[] Args) {
         int[] numeros = new int[7];
         int total = 0;

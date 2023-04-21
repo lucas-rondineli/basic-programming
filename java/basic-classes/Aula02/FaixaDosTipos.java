@@ -1,4 +1,6 @@
-public class Aula02_ex002 {
+package Aula02;
+
+public class FaixaDosTipos {
     public static void main(String[] Args) {
         System.out.printf("Menor Byte: %d\n", Byte.MIN_VALUE);
         System.out.printf("Maior Byte: %d\n", Byte.MAX_VALUE);

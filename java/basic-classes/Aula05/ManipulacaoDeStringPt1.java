@@ -1,4 +1,6 @@
-public class Aula05_ex004 {
+package Aula05;
+
+public class ManipulacaoDeStringPt1 {
     public static void main(String[] Args) {
         String nome = " Lucas", sobrenome = " Rondineli", nomeCompleto = nome + sobrenome, 
         primeiroNome = nomeCompleto.trim().substring(0, nomeCompleto.trim().indexOf(' '));

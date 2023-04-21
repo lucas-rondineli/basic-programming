@@ -1,7 +1,9 @@
+package Aula04;
+
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class Aula04 {
+public class ConjuntoDeFuncoes {
     public static void main(String[] Args) {
         pratica1();
         pratica2();

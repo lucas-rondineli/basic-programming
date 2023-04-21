@@ -1,4 +1,6 @@
-public class Aula05_ex001 {
+package Aula05;
+
+public class ManipulacaoDeArrayPt1 {
     public static void main(String[] Args) {
         int[] numeros = {10, 23, 45, 60, 5, 8, 23};
         int total = 0;

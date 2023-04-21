@@ -1,6 +1,8 @@
+package Aula05;
+
 import javax.swing.JOptionPane;
 
-public class Aula05_ex005 {
+public class ManipulacaoDeStringPt2 {
     public static void main(String[] Args) {
         String n = JOptionPane.showInputDialog(null, "Entre com seu nome completo:", "Prática 6.5", 1).trim();
 

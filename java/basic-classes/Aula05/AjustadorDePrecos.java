@@ -1,6 +1,8 @@
+package Aula05;
+
 import javax.swing.JOptionPane;
 
-public class Aula05_ex009 {
+public class AjustadorDePrecos {
     public static void main(String[] Args) {
         float preco;
         preco = 0;

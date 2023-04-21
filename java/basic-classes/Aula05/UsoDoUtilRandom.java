@@ -1,6 +1,8 @@
+package Aula05;
+
 import java.util.Random;
 
-public class Aula05_ex008 {
+public class UsoDoUtilRandom {
     public static void main(String[] Args) {
         Random gerador = new Random();
         int total = 0, aux;

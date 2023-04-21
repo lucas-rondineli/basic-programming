@@ -1,3 +1,5 @@
+package Prova01;
+
 import java.util.Scanner;
 
 public class Pessoas {

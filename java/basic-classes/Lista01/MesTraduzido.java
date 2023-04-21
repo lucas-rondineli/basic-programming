@@ -1,6 +1,8 @@
+package Lista01;
+
 import javax.swing.JOptionPane;
 
-public class Aula06 {
+public class MesTraduzido {
     public static void main(String[] Args) {
         String[] mesPT = { "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro",
                 "Outubro", "Novembro", "Dezembro" };

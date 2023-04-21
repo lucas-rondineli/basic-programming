@@ -1,6 +1,8 @@
+package Aula02;
+
 import java.util.Scanner;
 
-public class Aula02_ex001 {
+public class CalculadoraIMC {
 
     public static void main(String[] Args) {
         Scanner sc = new Scanner(System.in);

@@ -1,6 +1,8 @@
+package Aula05;
+
 import java.util.Scanner;
 
-public class Aula05_ex010 {
+public class StringInversa {
     public static void main(String[] Args) {
         Scanner sc = new Scanner(System.in);
         

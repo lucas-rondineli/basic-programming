@@ -1,6 +1,8 @@
+package Aula01;
+
 import java.util.Scanner;
 
-public class Aula01 {
+public class TabuadaSimples {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
