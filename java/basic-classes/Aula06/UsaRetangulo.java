@@ -2,7 +2,7 @@ package Aula06;
 
 import java.util.Scanner;
 
-public class TesteRetangulo {
+public class UsaRetangulo {
     public static void main(String[] Args) {
         Scanner sc = new Scanner(System.in);
 

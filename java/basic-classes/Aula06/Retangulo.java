@@ -21,12 +21,12 @@ public class Retangulo {
     }
 
     public double area() {
-        return this.largura * this.altura;
+        return largura * altura;
     }
     public double perimetro() {
-        return 2 * (this.largura + this.altura);
+        return 2 * (largura + altura);
     }
     public double diagonal() {
-        return Math.sqrt(this.largura * this.largura + this.altura * this.altura);
+        return Math.sqrt(largura * largura + altura * altura);
     }
 }
