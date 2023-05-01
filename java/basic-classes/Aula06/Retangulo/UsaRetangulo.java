@@ -1,4 +1,4 @@
-package Aula06;
+package Aula06.Retangulo;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Aula06;
+package Aula06.Aluno;
 
 public class Aluno {
     private double n1, n2, n3;

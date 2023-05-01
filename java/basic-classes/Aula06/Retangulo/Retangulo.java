@@ -1,4 +1,4 @@
-package Aula06;
+package Aula06.Retangulo;
 
 public class Retangulo {
     private double largura = 1;
@@ -21,12 +21,12 @@ public class Retangulo {
     }
 
     public double area() {
-        return largura * altura;
+        return this.largura * this.altura;
     }
     public double perimetro() {
-        return 2 * (largura + altura);
+        return 2 * (this.largura + this.altura);
     }
     public double diagonal() {
-        return Math.sqrt(largura * largura + altura * altura);
+        return Math.sqrt(this.largura * this.largura + this.altura * this.altura);
     }
 }

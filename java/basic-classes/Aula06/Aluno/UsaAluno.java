@@ -1,4 +1,4 @@
-package Aula06;
+package Aula06.Aluno;
 
 import java.util.Scanner;
 

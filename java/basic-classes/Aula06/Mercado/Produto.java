@@ -1,4 +1,4 @@
-package Aula06;
+package Aula06.Mercado;
 
 public class Produto {
     public String nome;

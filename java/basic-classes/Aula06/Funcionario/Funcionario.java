@@ -1,4 +1,4 @@
-package Aula06;
+package Aula06.Funcionario;
 
 public class Funcionario {
     private String nome;
