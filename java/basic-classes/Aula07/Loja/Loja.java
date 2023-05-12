@@ -3,13 +3,11 @@ package Aula07.Loja;
 public class Loja {
     private Validador vd = new Validador();
     private int totalDeProdutos, numeroDeProdutosCadastrados = 0;
-    private int[] tiposDosProdutos;
     private Produto[] listaDeProdutos;
 
     public Loja(int totalDeProdutos) {
         this.totalDeProdutos = totalDeProdutos;
         this.listaDeProdutos = new Produto[totalDeProdutos];
-        this.tiposDosProdutos = new int[totalDeProdutos];
     }
 
     public void adicionarProduto() {
@@ -39,8 +37,7 @@ public class Loja {
 
             switch (opt) {
                 case 1:
-                    listaDeProdutos[numeroDeProdutosCadastrados] = new Produto(nome, preco, descricao);
-                    tiposDosProdutos[numeroDeProdutosCadastrados++] = 1;
+                    listaDeProdutos[numeroDeProdutosCadastrados++] = new Produto(nome, preco, descricao);
                     break;
                 case 2:
                     double memoria, armazenamento;
@@ -58,9 +55,8 @@ public class Loja {
                             break;
                         System.out.printf("Por favor, digite um armazenamento válido.\n\n");
                     }
-                    listaDeProdutos[numeroDeProdutosCadastrados] = new Computador(nome, preco, descricao, memoria,
+                    listaDeProdutos[numeroDeProdutosCadastrados++] = new Computador(nome, preco, descricao, memoria,
                             armazenamento);
-                    tiposDosProdutos[numeroDeProdutosCadastrados++] = 2;
                     break;
                 case 3:
                     String resolucao = vd.lerString(
@@ -68,9 +64,8 @@ public class Loja {
                             "Por favor, descreva uma resolução válida.\n\n");
                     String tamanhoDeTela = vd.lerString("Descreva o tamanho da tela (Polegadas): ",
                             "Por favor, descreva um tamanho válido.\n\n");
-                    listaDeProdutos[numeroDeProdutosCadastrados] = new Monitor(nome, preco, descricao, resolucao,
+                    listaDeProdutos[numeroDeProdutosCadastrados++] = new Monitor(nome, preco, descricao, resolucao,
                             tamanhoDeTela);
-                    tiposDosProdutos[numeroDeProdutosCadastrados++] = 3;
             }
             System.out.printf("Produto Cadastrado com Sucesso.\n\n");
         } else
@@ -82,16 +77,7 @@ public class Loja {
         if (numeroDeProdutosCadastrados != 0)
             for (int i = 0; i < numeroDeProdutosCadastrados; i++) {
                 System.out.println();
-                switch (tiposDosProdutos[i]) {
-                    case 1:
-                        System.out.printf(listaDeProdutos[i].mostreInfo());
-                        break;
-                    case 2:
-                        System.out.printf(((Computador) listaDeProdutos[i]).mostreInfo());
-                        break;
-                    case 3:
-                        System.out.printf(((Monitor) listaDeProdutos[i]).mostreInfo());
-                }
+                System.out.printf(listaDeProdutos[i].mostreInfo());
             }
         else
             System.out.printf("Nenhum produto cadastrado no momento.\n\n");
