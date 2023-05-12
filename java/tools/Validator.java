@@ -46,6 +46,7 @@ public class Validator {
      * @param teste A Predicate that receives an Integer and that must return a
      *              boolean value
      * @return An Integer with the requirements informed in the Predicate
+     * @throws IllegalStateException if this class Scanner is closed
      */
     public int validateInt(String msg, String err, Predicate<Integer> teste) {
         if (closed)
@@ -77,6 +78,7 @@ public class Validator {
      * @param teste A Predicate that receives a Double and that must return a
      *              boolean value
      * @return A Double with the requirements informed in the Predicate
+     * @throws IllegalStateException if this class Scanner is closed
      */
     public double validateDouble(String msg, String err, Predicate<Double> teste) {
         if (closed)
@@ -108,6 +110,7 @@ public class Validator {
      * @param teste A Predicate that receives a String and that must return a
      *              boolean value
      * @return A String with the requirements informed in the Predicate
+     * @throws IllegalStateException if this class Scanner is closed
      */
     public String validateString(String msg, String err, Predicate<String> teste) {
         if (closed)
