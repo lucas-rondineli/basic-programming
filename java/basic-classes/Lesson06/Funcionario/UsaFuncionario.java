@@ -1,4 +1,4 @@
-package Lesson06.Funcionario;
+package lesson06.funcionario;
 
 import java.util.Scanner;
 

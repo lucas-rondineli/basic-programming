@@ -1,4 +1,4 @@
-package Lesson06.Retangulo;
+package lesson06.retangulo;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Lesson08.Escritorio;
+package lesson08.escritorio;
 
 public class Assistente extends Funcionario {
     public Assistente(String nome, String matricula, double salario_base) {

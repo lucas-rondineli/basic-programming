@@ -1,4 +1,4 @@
-package Lesson07.Empresa;
+package lesson07.empresa;
 
 public class Funcionario {
     protected String nome;

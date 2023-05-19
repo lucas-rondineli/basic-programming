@@ -1,4 +1,4 @@
-package Lesson06.Aluno;
+package lesson06.aluno;
 
 import java.util.Scanner;
 

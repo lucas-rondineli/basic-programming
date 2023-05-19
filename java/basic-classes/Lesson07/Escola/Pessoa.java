@@ -1,4 +1,4 @@
-package Lesson07.Escola;
+package lesson07.escola;
 
 public class Pessoa {
     protected String nome;

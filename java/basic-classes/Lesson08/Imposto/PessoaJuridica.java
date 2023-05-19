@@ -1,4 +1,4 @@
-package Lesson08.Imposto;
+package lesson08.imposto;
 
 public class PessoaJuridica extends Pessoa {
     private int numeroDeFuncionarios;

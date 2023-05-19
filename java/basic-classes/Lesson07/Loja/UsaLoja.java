@@ -1,4 +1,4 @@
-package Lesson07.Loja;
+package lesson07.loja;
 
 public class UsaLoja {
     public static void main(String[] Args) {

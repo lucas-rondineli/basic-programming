@@ -1,4 +1,4 @@
-package List01;
+package list01;
 
 import javax.swing.JOptionPane;
 import java.util.Arrays;

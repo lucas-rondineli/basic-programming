@@ -1,4 +1,4 @@
-package Lesson07.Empresa;
+package lesson07.empresa;
 
 public class UsaEmpresa {
     public static void main(String[] Args) {

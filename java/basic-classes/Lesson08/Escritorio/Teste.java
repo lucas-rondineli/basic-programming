@@ -1,4 +1,4 @@
-package Lesson08.Escritorio;
+package lesson08.escritorio;
 
 public class Teste {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Lesson07.Loja;
+package lesson07.loja;
 
 public class Loja {
     private Validador vd = new Validador();

@@ -1,4 +1,4 @@
-package Lesson06.Retangulo;
+package lesson06.retangulo;
 
 public class Retangulo {
     private double largura = 1;

@@ -1,4 +1,4 @@
-package Lesson08.Escritorio;
+package lesson08.escritorio;
 
 public class Vendedor extends Funcionario {
     private double comissao;

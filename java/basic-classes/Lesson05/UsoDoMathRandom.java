@@ -1,4 +1,4 @@
-package Lesson05;
+package lesson05;
 
 public class UsoDoMathRandom {
     public static void main(String[] Args) {

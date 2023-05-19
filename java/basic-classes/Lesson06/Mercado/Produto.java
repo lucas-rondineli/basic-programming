@@ -1,4 +1,4 @@
-package Lesson06.Mercado;
+package lesson06.mercado;
 
 public class Produto {
     public String nome;

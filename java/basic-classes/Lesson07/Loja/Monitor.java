@@ -1,4 +1,4 @@
-package Lesson07.Loja;
+package lesson07.loja;
 
 public class Monitor extends Produto {
     private String resolucao;

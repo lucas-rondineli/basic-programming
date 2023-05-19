@@ -1,4 +1,4 @@
-package Lesson08.Escritorio;
+package lesson08.escritorio;
 
 public abstract class Funcionario {
     protected String nome, matricula;

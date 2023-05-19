@@ -1,4 +1,4 @@
-package Lesson06.Mercado;
+package lesson06.mercado;
 
 import java.util.Scanner;
 

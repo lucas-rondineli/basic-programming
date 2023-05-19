@@ -1,4 +1,4 @@
-package Lesson05;
+package lesson05;
 
 public class ManipulacaoDeStringPt1 {
     public static void main(String[] Args) {

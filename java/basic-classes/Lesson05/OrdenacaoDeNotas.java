@@ -1,4 +1,4 @@
-package Lesson05;
+package lesson05;
 
 import javax.swing.JOptionPane;
 import java.util.Arrays;
