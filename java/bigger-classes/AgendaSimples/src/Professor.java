@@ -1,4 +1,4 @@
-package agendaSimples.src;
+package agendasimples.src;
 
 public class Professor extends Pessoa {
     private int matricula;

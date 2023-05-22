@@ -1,4 +1,4 @@
-package agendaSimples.src;
+package agendasimples.src;
 
 public class EscolaDB {
         public final int NUMERO_DE_ALUNOS = 10, NUMERO_DE_PROFESSORES = 5, NUMERO_DE_RESPONSAVEIS = 10;

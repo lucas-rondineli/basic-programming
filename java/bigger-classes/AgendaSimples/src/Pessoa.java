@@ -1,4 +1,4 @@
-package agendaSimples.src;
+package agendasimples.src;
 
 public abstract class Pessoa {
     protected String nome, email, telefone;

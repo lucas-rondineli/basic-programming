@@ -1,4 +1,4 @@
-package agendaSimples.src;
+package agendasimples.src;
 
 import tools.Validator;
 import java.util.ArrayList;

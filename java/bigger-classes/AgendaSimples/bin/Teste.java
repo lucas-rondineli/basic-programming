@@ -1,6 +1,6 @@
-package agendaSimples.bin;
+package agendasimples.bin;
 
-import agendaSimples.src.Escola;
+import agendasimples.src.Escola;
 import tools.Validator;
 
 public class Teste {
