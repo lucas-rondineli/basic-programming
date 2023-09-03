@@ -1,3 +1,5 @@
+package implementations;
+
 public interface DEList<T> {
     public boolean isEmpty();
 

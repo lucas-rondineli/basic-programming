@@ -1,3 +1,5 @@
+package implementations;
+
 public class SeqList<T> implements DEList<T> {
     private T[] data;
     private int numberOfElements;

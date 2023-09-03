@@ -1,3 +1,5 @@
+package implementations;
+
 class Node<T> {
     private T content;
     private Node<T> next;
