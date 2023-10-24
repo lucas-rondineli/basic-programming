@@ -1,44 +1,44 @@
 package implementations;
 
-class Node<T> {
-    private T content;
-    private Node<T> next;
-    private Node<T> prev;
-
-    public Node() {
-        this.content = null;
-        this.next = null;
-        this.prev = null;
-    }
-
-    public T getContent() {
-        return this.content;
-    }
-
-    public Node<T> getNext() {
-        return this.next;
-    }
-
-    public Node<T> getPrev() {
-        return this.prev;
-    }
-
-    public void setContent(T content) {
-        this.content = content;
-    }
-
-    public void setNext(Node<T> next) {
-        this.next = next;
-    }
-
-    public void setPrev(Node<T> prev) {
-        this.prev = prev;
-    }
-}
-
 public class DoubleLinkedList<T> implements DEList<T> {
-    private Node<T> head;
-    private Node<T> tail;
+    class Node {
+        private T content;
+        private Node next;
+        private Node prev;
+
+        public Node() {
+            this.content = null;
+            this.next = null;
+            this.prev = null;
+        }
+
+        public T getContent() {
+            return this.content;
+        }
+
+        public Node getNext() {
+            return this.next;
+        }
+
+        public Node getPrev() {
+            return this.prev;
+        }
+
+        public void setContent(T content) {
+            this.content = content;
+        }
+
+        public void setNext(Node next) {
+            this.next = next;
+        }
+
+        public void setPrev(Node prev) {
+            this.prev = prev;
+        }
+    }
+
+    private Node head;
+    private Node tail;
     private int numberOfElements;
 
     public DoubleLinkedList() {
@@ -48,9 +48,7 @@ public class DoubleLinkedList<T> implements DEList<T> {
     }
 
     public boolean isEmpty() {
-        if (this.size() == 0)
-            return true;
-        return false;
+        return this.size() == 0;
     }
 
     public int size() {
@@ -62,7 +60,7 @@ public class DoubleLinkedList<T> implements DEList<T> {
             return null;
 
         if (index < this.size() / 2) {
-            Node<T> aux = this.head;
+            Node aux = this.head;
 
             for (int i = 0; i < index; i++)
                 aux = aux.getNext();
@@ -70,7 +68,7 @@ public class DoubleLinkedList<T> implements DEList<T> {
             return aux.getContent();
         }
 
-        Node<T> aux = this.tail;
+        Node aux = this.tail;
 
         for (int i = this.size() - 1; i > index; i--)
             aux = aux.getPrev();
@@ -82,7 +80,7 @@ public class DoubleLinkedList<T> implements DEList<T> {
         if (this.isEmpty())
             return -1;
 
-        Node<T> aux = this.head;
+        Node aux = this.head;
 
         for (int i = 0; i < this.size(); i++) {
             if (aux.getContent().equals(v))
@@ -96,7 +94,7 @@ public class DoubleLinkedList<T> implements DEList<T> {
         if (this.isEmpty() || offset < 0 || offset >= this.size())
             return -1;
 
-        Node<T> aux = this.head;
+        Node aux = this.head;
 
         for (int i = 0; i < offset; i++)
             aux = aux.getNext();
@@ -110,13 +108,13 @@ public class DoubleLinkedList<T> implements DEList<T> {
         return -1;
     }
 
-    public int indexOf(T v, int offset, int targethOccurrence) {
+    public int indexOf(T v, int offset, int targetOccurrence) {
         if (this.isEmpty() || offset < 0 || offset >= this.size()
-                || targethOccurrence > this.size())
+                || targetOccurrence > this.size())
             return -1;
 
         int numberOfOccurrences = 0;
-        Node<T> aux = this.head;
+        Node aux = this.head;
 
         for (int i = 0; i < offset; i++)
             aux = aux.getNext();
@@ -124,7 +122,7 @@ public class DoubleLinkedList<T> implements DEList<T> {
         for (int i = offset; i < this.size(); i++) {
             if (aux.getContent().equals(v)) {
                 numberOfOccurrences++;
-                if (numberOfOccurrences == targethOccurrence)
+                if (numberOfOccurrences == targetOccurrence)
                     return i;
             }
             aux = aux.getNext();
@@ -134,7 +132,7 @@ public class DoubleLinkedList<T> implements DEList<T> {
     }
 
     private boolean insertOnEmpty(T v) {
-        Node<T> newNode = new Node<T>();
+        Node newNode = new Node();
         newNode.setContent(v);
         this.head = newNode;
         this.tail = newNode;
@@ -142,7 +140,7 @@ public class DoubleLinkedList<T> implements DEList<T> {
     }
 
     private boolean insertOnStart(T v) {
-        Node<T> newNode = new Node<T>();
+        Node newNode = new Node();
         newNode.setContent(v);
         newNode.setNext(this.head);
         newNode.getNext().setPrev(newNode);
@@ -151,7 +149,7 @@ public class DoubleLinkedList<T> implements DEList<T> {
     }
 
     private boolean insertOnEnd(T v) {
-        Node<T> newNode = new Node<T>();
+        Node newNode = new Node();
         newNode.setContent(v);
         newNode.setPrev(this.tail);
         newNode.getPrev().setNext(newNode);
@@ -161,24 +159,24 @@ public class DoubleLinkedList<T> implements DEList<T> {
 
     private boolean insertOnMiddle(T v, int index) {
         if (index < this.size() / 2) {
-            Node<T> predecessor = this.head;
+            Node predecessor = this.head;
 
             for (int i = 0; i < index - 1; i++)
                 predecessor = predecessor.getNext();
 
-            Node<T> newNode = new Node<T>();
+            Node newNode = new Node();
             newNode.setContent(v);
             newNode.setPrev(predecessor);
             newNode.setNext(predecessor.getNext());
             newNode.getPrev().setNext(newNode);
             newNode.getNext().setPrev(newNode);
         } else {
-            Node<T> successor = this.tail;
+            Node successor = this.tail;
 
             for (int i = this.size() - 1; i > index; i--)
                 successor = successor.getPrev();
 
-            Node<T> newNode = new Node<T>();
+            Node newNode = new Node();
             newNode.setContent(v);
             newNode.setNext(successor);
             newNode.setPrev(successor.getPrev());
@@ -209,7 +207,7 @@ public class DoubleLinkedList<T> implements DEList<T> {
     private T removeOnMiddle(int index) {
         T removedElement;
         if (index < this.size() / 2) {
-            Node<T> predecessor = this.head;
+            Node predecessor = this.head;
 
             for (int i = 0; i < index - 1; i++)
                 predecessor = predecessor.getNext();
@@ -219,7 +217,7 @@ public class DoubleLinkedList<T> implements DEList<T> {
             predecessor.setNext(predecessor.getNext().getNext());
             predecessor.getNext().setPrev(predecessor);
         } else {
-            Node<T> successor = this.tail;
+            Node successor = this.tail;
 
             for (int i = this.size() - 1; i > index + 1; i--)
                 successor = successor.getPrev();
@@ -269,7 +267,7 @@ public class DoubleLinkedList<T> implements DEList<T> {
         StringBuilder sb = new StringBuilder();
         sb.append('[');
 
-        Node<T> aux = this.head;
+        Node aux = this.head;
         while (aux.getNext() != null) {
             sb.append(aux.getContent().toString());
             sb.append(", ");

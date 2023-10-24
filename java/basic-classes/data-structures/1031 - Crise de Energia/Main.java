@@ -1,5 +1,3 @@
-package problem03;
-
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.LinkedList;

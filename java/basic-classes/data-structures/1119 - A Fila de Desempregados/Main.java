@@ -1,5 +1,3 @@
-package problem04;
-
 import java.util.Scanner;
 import java.util.LinkedList;
 

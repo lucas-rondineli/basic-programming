@@ -1,5 +1,3 @@
-package problem01;
-
 import java.util.Scanner;
 
 class SeqList {
